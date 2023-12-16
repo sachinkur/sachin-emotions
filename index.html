@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognizer</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body style="background-color: rgb(187, 255, 187);">
+        <h1 class="title">Face Recognizer</h1>
+        <sup>by sachin</sup>
+        <section class="page">
+        <p>𝘊𝘢𝘯 𝘐𝘥𝘦𝘯𝘵𝘪𝘧𝘺 𝘋𝘪𝘧𝘧𝘦𝘳𝘦𝘯𝘵 Emotions</p>
+        <div class="items">
+            <label>happy</label>
+            <hr>
+            <label>angry</label>
+            <hr>
+            <label>suprised</label>
+            <hr>
+        </div>
+
+        <div id="camera">
+
+        </div>
+        <div id="result"></div>
+        <br><br>
+        <button id="capture" class="btn-danger" onclick="take_snapshot()">Capture Image </button>
+        <button id="identify" class="btn-primary" onclick="identify()">Identify Image </button>
+        <br><br>
+        <p style="font-size: 22px;" style="font-family: 'Times New Roman', Times, serif;">Emotion : <span id="result_object_name"></span> </p>
+        <p style="font-size: 22px;">Accuracy :  <span id="result_object_accuracy"></span></p>
+        </section>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- https://teachablemachine.withgoogle.com/train/image/1B69jeFKlBszgsBa4N0DHHDfEizwXNmUg/model.json -->
