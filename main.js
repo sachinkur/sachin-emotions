@@ -18,7 +18,7 @@ function take_snapshot()
     })
 }
 console.log("ml5 version", ml5.version)
-classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/9S0YGQxFx/model.json", model_loaded)
+classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/knr_eCdKq/model.json", model_loaded)
 function model_loaded(){
     console.log("model is loaded")
 }
